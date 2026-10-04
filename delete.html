@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ștergerea datelor — TachoGo</title>
+<meta name="description" content="Cum ceri ștergerea datelor tale din aplicația TachoGo (Barbu Apps).">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --card: #f8fafc;
+    --text: #0f172a;
+    --muted: #475569;
+    --line: #e2e8f0;
+    --accent: #0d9488;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b1220;
+      --card: #111c33;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --line: #1e293b;
+      --accent: #2dd4bf;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    padding: 0 16px 64px;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 28px 0 8px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 8px;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; }
+  .brand svg { width: 34px; height: 34px; flex: none; }
+  .langs { display: flex; gap: 6px; }
+  .langs button {
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 7px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    background: var(--card);
+    color: var(--muted);
+    cursor: pointer;
+  }
+  .langs button[aria-pressed="true"] {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  h1 { font-size: 26px; line-height: 1.25; margin: 28px 0 4px; }
+  h2 { font-size: 19px; margin: 34px 0 10px; }
+  h3 { font-size: 16px; margin: 24px 0 8px; }
+  p, li { color: var(--text); }
+  a { color: var(--accent); }
+  code {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    padding: 1px 5px;
+    font-size: 0.9em;
+  }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 30px 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 15px;
+    display: block;
+    overflow-x: auto;
+  }
+  th, td {
+    border: 1px solid var(--line);
+    padding: 9px 11px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: var(--card); font-size: 14px; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  [hidden] { display: none !important; }
+  footer {
+    margin-top: 48px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">
+      <svg viewBox="0 0 1024 1024" aria-hidden="true">
+        <defs><linearGradient id="g" x1="0.1" y1="0" x2="0.95" y2="0.75">
+          <stop offset="0" stop-color="#38BDF8"/><stop offset="0.38" stop-color="#2DD4BF"/>
+          <stop offset="1" stop-color="#22C55E"/></linearGradient></defs>
+        <circle cx="512" cy="512" r="330" fill="none" stroke="rgba(148,163,184,0.25)" stroke-width="86"/>
+        <path d="M 512 182 A 330 330 0 1 1 202.0 622.9" fill="none" stroke="url(#g)" stroke-width="86" stroke-linecap="round"/>
+        <g transform="rotate(46 512 512)">
+          <path d="M 512 262 L 552 500 L 472 500 Z" fill="currentColor" stroke="currentColor" stroke-width="26" stroke-linejoin="round"/>
+        </g>
+        <circle cx="512" cy="512" r="52" fill="currentColor"/>
+      </svg>
+      <span>TachoGo</span>
+    </div>
+    <div class="langs">
+      <button type="button" data-lang="ro" aria-pressed="true">Română</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </div>
+  </header>
+
+  <article id="ro">
+<h1>Ștergerea datelor — TachoGo</h1>
+<p>Aplicația <strong>TachoGo</strong>, publicată de <strong>Barbu Apps</strong>.</p>
+<p>TachoGo nu are conturi. Aproape tot ce introduci stă doar pe telefonul tău. La noi ajung date numai dacă folosești funcțiile pentru parcări.</p>
+<hr>
+<h2>1. Datele de pe telefon — le ștergi singur, pe loc</h2>
+<p>Jurnalul, orele de program, odihnele, kilometrii, setările.</p>
+<ul><li>În aplicație: fila <strong>Jurnal</strong> → <strong>Șterge tot</strong>, sau</li><li>dezinstalezi aplicația — tot ce e pe telefon dispare odată cu ea.</li></ul>
+<p>Nu avem nicio copie a acestor date, deci nu ai ce cere de la noi.</p>
+<h2>2. Datele de la noi — ne scrii și le ștergem</h2>
+<p>Ce poate exista la noi, dacă ai folosit parcările:</p>
+<ul><li>parcările pe care le-ai adăugat (denumire, notă, coordonate);</li><li>raportările tale de locuri libere;</li><li>confirmările („Există" / „Nu e aici") și raportările de conținut făcute de tine;</li><li>identificatorul aleator al instalării, salvat împreună cu cele de mai sus.</li></ul>
+<h3>Pașii</h3>
+<p>1. Scrie la <strong>alexbarbu.apps@gmail.com</strong>, cu subiectul <strong>„Ștergere date TachoGo"</strong>. 2. Spune-ne, cât de aproximativ poți, <strong>ce</strong> ai adăugat și <strong>unde</strong> — de exemplu „am adăugat Autohof-ul de pe M70, la Muraszemenye, pe 20 septembrie". Aplicația nu știe cine ești, așa că locul și data sunt singurul mod în care găsim ce e al tău. 3. Ștergem tot ce găsim și îți răspundem în <strong>cel mult 30 de zile</strong>.</p>
+<hr>
+<h2>Ce se șterge și ce rămâne</h2>
+<table><thead><tr><th>Date</th><th>La cerere</th><th>Fără cerere</th></tr></thead><tbody><tr><td>Jurnalul și setările</td><td>Nu le avem — le ștergi tu, din aplicație</td><td>Rămân pe telefon până le ștergi sau dezinstalezi</td></tr><tr><td>Parcările adăugate de tine</td><td>Șterse definitiv, cu confirmările și raportările lor</td><td>Rămân cât timp parcarea există; dispar din listă după 3 confirmări „Nu e aici” sau 2 raportări de conținut</td></tr><tr><td>Raportările tale de locuri libere</td><td>Șterse definitiv</td><td>Se ascund după 3 ore; rândul rămâne ca istoric al parcării</td></tr><tr><td>Confirmările și raportările tale</td><td>Șterse definitiv</td><td>Rămân, legate doar de identificatorul aleator</td></tr></tbody></table>
+<p>După ștergere nu mai rămâne la noi nimic legat de instalarea ta.</p>
+<p>Politica de confidențialitate completă: <a href="https://alexdedu.github.io/tachogo-privacy/" rel="noopener">alexdedu.github.io/tachogo-privacy</a></p>
+  </article>
+
+  <article id="en" hidden>
+<h1>Deleting your data — TachoGo</h1>
+<p>The <strong>TachoGo</strong> app, published by <strong>Barbu Apps</strong>.</p>
+<p>TachoGo has no accounts. Almost everything you enter stays on your phone. Data only reaches us if you use the parking features.</p>
+<hr>
+<h2>1. Data on your phone — you delete it yourself, at once</h2>
+<p>Your logbook, duty hours, rests, kilometres, settings.</p>
+<ul><li>In the app: the <strong>Journal</strong> tab → <strong>Clear all</strong>, or</li><li>uninstall the app — everything on the phone goes with it.</li></ul>
+<p>We have no copy of this data, so there is nothing to ask us for.</p>
+<h2>2. Data we hold — write to us and we delete it</h2>
+<p>What we may hold, if you used the parking features:</p>
+<ul><li>parkings you added (name, note, coordinates);</li><li>your free-space reports;</li><li>your confirmations ("It exists" / "Not here") and content reports;</li><li>the random installation identifier stored with the above.</li></ul>
+<h3>The steps</h3>
+<p>1. Write to <strong>alexbarbu.apps@gmail.com</strong> with the subject <strong>"TachoGo data deletion"</strong>. 2. Tell us, as roughly as you can, <strong>what</strong> you added and <strong>where</strong> — for example "I added the Autohof on the M70 at Muraszemenye on 20 September". The app does not know who you are, so the place and the date are the only way we can find what is yours. 3. We delete everything we find and reply within <strong>30 days</strong> at most.</p>
+<hr>
+<h2>What is deleted and what is kept</h2>
+<table><thead><tr><th>Data</th><th>On request</th><th>Without a request</th></tr></thead><tbody><tr><td>Logbook and settings</td><td>We don't have them — delete them in the app</td><td>Stay on the phone until you clear them or uninstall</td></tr><tr><td>Parkings you added</td><td>Deleted for good, with their confirmations and reports</td><td>Kept while the parking exists; drop off the list after 3 "Not here" votes or 2 content reports</td></tr><tr><td>Your free-space reports</td><td>Deleted for good</td><td>Hidden after 3 hours; the row stays as the parking's history</td></tr><tr><td>Your confirmations and reports</td><td>Deleted for good</td><td>Kept, linked only to the random identifier</td></tr></tbody></table>
+<p>After deletion, nothing linked to your installation remains with us.</p>
+<p>Full privacy policy: <a href="https://alexdedu.github.io/tachogo-privacy/" rel="noopener">alexdedu.github.io/tachogo-privacy</a></p>
+  </article>
+
+  <footer>Barbu Apps · <a href="mailto:alexbarbu.apps@gmail.com">alexbarbu.apps@gmail.com</a></footer>
+</main>
+
+<script>
+  // The language choice only changes which article is shown; both are already
+  // in the page, so a reader with no JavaScript still gets the Romanian one.
+  var buttons = document.querySelectorAll('.langs button');
+  function show(lang) {
+    document.getElementById('ro').hidden = lang !== 'ro';
+    document.getElementById('en').hidden = lang !== 'en';
+    document.documentElement.lang = lang;
+    buttons.forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
+    });
+  }
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () { show(b.dataset.lang); });
+  });
+  // Someone arriving from an English-language store listing should land on the
+  // English text without hunting for the toggle.
+  if ((navigator.language || '').slice(0, 2).toLowerCase() !== 'ro') show('en');
+</script>
+</body>
+</html>
